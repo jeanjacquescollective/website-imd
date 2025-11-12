@@ -7,9 +7,6 @@
     <meta name="description" content="Keuzetraject Interactive Media Development — Web · Virtual · Physical — Arteveldehogeschool">
     <link rel="stylesheet" href="css/style.css">
 </head>
-     
-  </style>
-</head>
 <body>
   <div class="backdrop">
     <div class="blob b1"></div>
@@ -21,7 +18,7 @@
       <a class="brand" href="#">
         <div class="logo" aria-hidden>IM</div>
         <div>
-          <div style="font-weight:600">Arteveldehogeschool</div>
+          <div>Arteveldehogeschool</div>
           <div style="font-size:13px;color:var(--muted)">Interactive Media Development</div>
         </div>
       </a>
@@ -37,7 +34,7 @@
       <section class="hero" id="overview">
         <div>
           <h1>Interactive Media <span class="accent">Development</span></h1>
-          <p class="lead">Keuzetraject van de Bachelor Grafische en Digitale Media — hands‑on opleiding voor makers, ontwerpers en technologische vernieuwers. Bouw webapps, AR/VR‑ervaringen en fysieke installaties met impact.</p>
+          <p class="lead">Keuzetraject van de Bachelor Grafische en Digitale Media — hands-on opleiding voor makers, ontwerpers en technologische vernieuwers. Bouw webapps, AR/VR-ervaringen en fysieke installaties met impact.</p>
 
           <div class="actions">
             <button class="btn-primary" id="openInfo">Vraag infodag aan</button>
@@ -55,10 +52,10 @@
         <aside>
           <div class="card">
             <div class="features">
-              <div class="feature"><div style="font-weight:600">Web</div><small>HTML, CSS, React, Node.js</small></div>
-              <div class="feature"><div style="font-weight:600">Virtual</div><small>Unreal Engine, 3D, Game design</small></div>
-              <div class="feature"><div style="font-weight:600">Physical</div><small>Raspberry Pi, IoT, Sensors</small></div>
-              <div class="feature"><div style="font-weight:600">Tools</div><small>TouchDesigner, Low-code, AI</small></div>
+              <div class="feature"><div>Web</div><small>HTML, CSS, React, Node.js</small></div>
+              <div class="feature"><div>Virtual</div><small>Unreal Engine, 3D, Game design</small></div>
+              <div class="feature"><div>Physical</div><small>Raspberry Pi, IoT, Sensors</small></div>
+              <div class="feature"><div>Tools</div><small>TouchDesigner, Low-code, AI</small></div>
             </div>
           </div>
         </aside>
@@ -72,7 +69,7 @@
             <ul class="muted" style="margin:0;padding-left:18px">
               <li>Creatief en oplossingsgericht</li>
               <li>Gefascineerd door AR/VR en nieuwe technologieën</li>
-              <li>Hands‑on: leert door te doen</li>
+              <li>Hands-on: leert door te doen</li>
               <li>Teamspeler en overtuigend</li>
             </ul>
           </div>
@@ -96,7 +93,7 @@
 
       <section id="pijlers">
         <h2>Ontwerp media die ertoe doen</h2>
-        <p class="muted">Creativiteit en bouwproces vormen een rode draad. Projecten variëren van websites tot VR games en fysieke computing‑installaties.</p>
+        <p class="muted">Creativiteit en bouwproces vormen een rode draad. Projecten variëren van websites tot VR games en fysieke computing-installaties.</p>
         <div class="grid-3" style="margin-top:12px">
           <div class="card"><h4 style="margin:0">Web</h4><p class="muted">Gebruikersvriendelijke apps en interactieve kiosken.</p></div>
           <div class="card"><h4 style="margin:0">Virtual</h4><p class="muted">Meeslepende 3D experiences en games.</p></div>
@@ -112,17 +109,17 @@
 
         <div class="grid-3" style="margin-top:12px">
           <div class="project card">
-            <div style="font-weight:600">Interactieve Museumpaal</div>
+            <div>Interactieve Museumpaal</div>
             <div class="meta">Kiosk met verhaalmodus en AR overlay</div>
           </div>
 
           <div class="project card">
-            <div style="font-weight:600">VR Escape Experience</div>
+            <div>VR Escape Experience</div>
             <div class="meta">Volledig narratieve VR escaperoom</div>
           </div>
 
           <div class="project card">
-            <div style="font-weight:600">IoT Escape Room</div>
+            <div>IoT Escape Room</div>
             <div class="meta">Sensornetwerk &amp; fysieke puzzels</div>
           </div>
         </div>
@@ -133,9 +130,9 @@
         <p class="muted">Kies uit keuzevakken zoals Illustratie, Fotografie en Digital Marketing. In jaar 3 werk je in multidisciplinaire teams.</p>
 
         <div class="grid-3" style="margin-top:12px">
-          <div class="card"><div style="font-weight:600">Illustratie</div><div class="muted">Keuzevak jaar 2</div></div>
-          <div class="card"><div style="font-weight:600">Fotografie</div><div class="muted">Keuzevak jaar 2</div></div>
-          <div class="card"><div style="font-weight:600">Digital Marketing</div><div class="muted">Keuzevak jaar 2</div></div>
+          <div class="card"><div>Illustratie</div><div class="muted">Keuzevak jaar 2</div></div>
+          <div class="card"><div>Fotografie</div><div class="muted">Keuzevak jaar 2</div></div>
+          <div class="card"><div>Digital Marketing</div><div class="muted">Keuzevak jaar 2</div></div>
         </div>
       </section>
 
@@ -176,6 +173,18 @@
       document.querySelectorAll('.card, .feature, .project, .stat').forEach((el,i)=>{
         el.style.opacity = 0; el.style.transform = 'translateY(8px)';
         setTimeout(()=>{ el.style.transition = 'all .45s cubic-bezier(.2,.9,.2,1)'; el.style.opacity=1; el.style.transform='none'; }, 120 * i);
+      });
+      const blobs = document.querySelectorAll('.blob');
+      blobs.forEach(blob => {
+        blob.animate([
+          { transform: 'translate(0, 0)' },
+          { transform: 'translate(-100px, -100px)' },
+          { transform: 'translate(0, 0)' }
+        ], {
+          duration: 20000,
+          iterations: Infinity,
+          easing: 'ease-in-out'
+        });
       });
     });
   </script>
