@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g><g transform="matrix(6.086056843770921,0,0,6.086056843770921,0,261.8830259874627)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="164.31" height="78.25"><svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.31 78.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fdbb4a;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="27.62 69.15 27.62 35.21 40.03 44.22 40.03 69.15 27.62 69.15"></polygon>
+  <path class="cls-1" d="M91.21,69.08V21.9s12.41-12.22,12.41-12.22v46.99s21.83,0,21.83,0c8.6,0,16.98-8.23,16.98-17.33s-8.38-17.3-16.98-17.3h-15.32v-12.36h15.32c14.55,0,29.14,14.22,29.14,29.67s-14.6,29.9-29.14,29.9l-34.23-.17Z"></path>
+  <polygon class="cls-1" points="103.61 9.68 65.72 47.57 27.62 9.47 44.37 9.47 65.55 30.65 86.69 9.51 103.61 9.68"></polygon>
+  <polygon class="cls-2" points="9.72 9.46 72.2 68.62 9.72 26.23 9.72 9.46"></polygon>
+  <polygon class="cls-2" points="9.72 69.11 9.72 9.46 22.21 21.68 22.21 69.11 9.72 69.11"></polygon>
+</svg></svg></g></g></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1009)"><rect width="1000" height="1000" fill="#ffffff"></rect><g transform="matrix(4.260239790639645,0,0,4.260239790639645,150,333.3181181912239)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="164.31" height="78.25"><svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.31 78.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fdbb4a;
+      }
+    </style>
+  <clipPath id="SvgjsClipPath1009"><rect width="1000" height="1000" x="0" y="0" rx="500" ry="500"></rect></clipPath></defs>
+  <polygon class="cls-1" points="27.62 69.15 27.62 35.21 40.03 44.22 40.03 69.15 27.62 69.15"></polygon>
+  <path class="cls-1" d="M91.21,69.08V21.9s12.41-12.22,12.41-12.22v46.99s21.83,0,21.83,0c8.6,0,16.98-8.23,16.98-17.33s-8.38-17.3-16.98-17.3h-15.32v-12.36h15.32c14.55,0,29.14,14.22,29.14,29.67s-14.6,29.9-29.14,29.9l-34.23-.17Z"></path>
+  <polygon class="cls-1" points="103.61 9.68 65.72 47.57 27.62 9.47 44.37 9.47 65.55 30.65 86.69 9.51 103.61 9.68"></polygon>
+  <polygon class="cls-2" points="9.72 9.46 72.2 68.62 9.72 26.23 9.72 9.46"></polygon>
+  <polygon class="cls-2" points="9.72 69.11 9.72 9.46 22.21 21.68 22.21 69.11 9.72 69.11"></polygon>
+</svg></svg></g></g></svg></g></svg>

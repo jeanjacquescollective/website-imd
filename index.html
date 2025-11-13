@@ -1,72 +1,117 @@
 <!doctype html>
 <html lang="nl">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Interactive Media Development — Futuristisch</title>
-    <meta name="description" content="Keuzetraject Interactive Media Development — Web · Virtual · Physical — Arteveldehogeschool">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Interactive Media Development — Futuristisch</title>
+  <meta name="description"
+    content="Keuzetraject Interactive Media Development — Web · Virtual · Physical — Arteveldehogeschool">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
 </head>
+
 <body>
   <div class="backdrop">
-    <div class="blob b1"></div>
-    <div class="blob b2"></div>
+    <div class="backdrop__blob backdrop__blob--1"></div>
+    <div class="backdrop__blob backdrop__blob--2"></div>
   </div>
 
-  <div class="container">
-    <header>
-      <a class="brand" href="#">
-        <div class="logo" aria-hidden>IM</div>
-        <div>
-          <div>Arteveldehogeschool</div>
-          <div style="font-size:13px;color:var(--muted)">Interactive Media Development</div>
+  <div class="site">
+    <header class="header">
+      <a class="header__brand" href="#">
+        <div class="header__logo" aria-hidden>
+          <img src="assets/IMD_logo-full-02.svg" alt="logo Interactive Media Development">
+        </div>
+        <div class="header__info">
+          <div class="header__institution">Arteveldehogeschool</div>
+          <div class="header__program" style="font-size:13px;color:var(--muted)">Interactive Media Development</div>
         </div>
       </a>
-      <nav>
-        <a href="#overview">Overzicht</a>
-        <a href="#pijlers">Pijlers</a>
-        <a href="#vakken">Vakken</a>
-        <a class="cta" href="#inschrijven">Inschrijven</a>
+      <nav class="header__nav">
+        <a class="header__link" href="#overview">Overzicht</a>
+        <a class="header__link" href="#pijlers">Pijlers</a>
+        <a class="header__link" href="#vakken">Vakken</a>
+        <a class="header__link header__link--cta" href="#inschrijven">Inschrijven</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero" id="overview">
-        <div>
-          <h1>Interactive Media <span class="accent">Development</span></h1>
-          <p class="lead">Keuzetraject van de Bachelor Grafische en Digitale Media — hands-on opleiding voor makers, ontwerpers en technologische vernieuwers. Bouw webapps, AR/VR-ervaringen en fysieke installaties met impact.</p>
+    <div class="divider divider--down"></div>
 
-          <div class="actions">
-            <button class="btn-primary" id="openInfo">Vraag infodag aan</button>
-            <button class="btn-outline" id="showCurriculum">Bekijk curriculum</button>
+
+    <main class="main">
+      <section class="hero" id="overview">
+        <div class="hero__content">
+          <h1 class="hero__title">Interactive Media <span class="hero__accent">Development</span></h1>
+          <p class="hero__lead">Keuzetraject van de Bachelor Grafische en Digitale Media — hands-on opleiding voor
+            makers,
+            ontwerpers en technologische vernieuwers. Bouw webapps, AR/VR-ervaringen en fysieke installaties met impact.
+          </p>
+
+          <div class="hero__actions">
+            <button class="btn btn--primary hero__button" id="openInfo">Vraag infodag aan</button>
+            <button class="btn btn--outline hero__button" id="showCurriculum">Bekijk curriculum</button>
           </div>
 
-          <div class="stats" aria-hidden>
-            <div class="stat card"><div class="k">Duur</div><div class="v">3 jaar</div></div>
-            <div class="stat card"><div class="k">Trajecten</div><div class="v">4</div></div>
-            <div class="stat card"><div class="k">Locatie</div><div class="v">Leeuwstraat 1, 9000 Gent</div></div>
-            <div class="stat card"><div class="k">Focus</div><div class="v">Web · Virtual · Physical</div></div>
+          <div class="hero__stats" aria-hidden>
+            <div class="card card--stat">
+              <div class="card__key">Duur</div>
+              <div class="card__value">3 jaar</div>
+            </div>
+            <!-- <div class="card card--stat">
+              <div class="card__key">Trajecten</div>
+              <div class="card__value">4</div>
+            </div> -->
+            <div class="card card--stat">
+              <div class="card__key">Locatie</div>
+              <div class="card__value">Leeuwstraat 1, 9000 Gent</div>
+            </div>
+            <div class="card card--stat">
+              <div class="card__key">Focus</div>
+              <div class="card__value">Web · Virtual · Physical</div>
+            </div>
           </div>
         </div>
 
-        <aside>
+        <aside class="hero__aside">
           <div class="card">
             <div class="features">
-              <div class="feature"><div>Web</div><small>HTML, CSS, React, Node.js</small></div>
-              <div class="feature"><div>Virtual</div><small>Unreal Engine, 3D, Game design</small></div>
-              <div class="feature"><div>Physical</div><small>Raspberry Pi, IoT, Sensors</small></div>
-              <div class="feature"><div>Tools</div><small>TouchDesigner, Low-code, AI</small></div>
+              <div class="features__item">
+                <div class="features__item-title">Web</div><small class="features__item-subtitle">HTML, CSS, React,
+                  Node.js</small>
+              </div>
+              <div class="features__item">
+                <div class="features__item-title">Virtual</div><small class="features__item-subtitle">Unreal Engine, 3D,
+                  Game design</small>
+              </div>
+              <div class="features__item">
+                <div class="features__item-title">Physical</div><small class="features__item-subtitle">Raspberry Pi,
+                  IoT, Sensors</small>
+              </div>
+              <div class="features__item">
+                <div class="features__item-title">Tools</div><small class="features__item-subtitle">TouchDesigner,
+                  Low-code, AI</small>
+              </div>
             </div>
           </div>
         </aside>
       </section>
 
-      <section aria-labelledby="profile">
-        <h2 id="profile">Jouw profiel en interesses</h2>
-        <div class="grid-3">
+      <div class="divider divider--up"></div>
+
+
+      <section class="section" aria-labelledby="profile">
+        <h2 id="profile" class="section__title">Jouw profiel en interesses</h2>
+        <div class="grid grid--3">
           <div class="card">
-            <h3 style="margin:0 0 8px 0">Jij, de maker van morgen</h3>
-            <ul class="muted" style="margin:0;padding-left:18px">
+            <h3 class="card__title" style="margin:0 0 8px 0">Jij, de maker van morgen</h3>
+            <ul class="text text--muted" style="margin:0;padding-left:18px">
               <li>Creatief en oplossingsgericht</li>
               <li>Gefascineerd door AR/VR en nieuwe technologieën</li>
               <li>Hands-on: leert door te doen</li>
@@ -75,8 +120,8 @@
           </div>
 
           <div class="card">
-            <h3 style="margin:0 0 8px 0">Wat je leert</h3>
-            <ul class="muted" style="margin:0;padding-left:18px">
+            <h3 class="card__title" style="margin:0 0 8px 0">Wat je leert</h3>
+            <ul class="text text--muted" style="margin:0;padding-left:18px">
               <li>Webtechnologieën: HTML, CSS, JavaScript, Node</li>
               <li>IoT met Raspberry Pi &amp; Python</li>
               <li>3D &amp; Unreal Engine</li>
@@ -85,96 +130,140 @@
           </div>
 
           <div class="card">
-            <h3 style="margin:0 0 8px 0">Ontwikkel een ondernemersmentaliteit</h3>
-            <p class="muted" style="margin:0">Leer pitchen, budgetteren en klantgericht werken. Tools voor freelancen en bedrijfsopbouw worden aangereikt.</p>
+            <h3 class="card__title" style="margin:0 0 8px 0">Ontwikkel een ondernemersmentaliteit</h3>
+            <p class="text text--muted" style="margin:0">Leer pitchen, budgetteren en klantgericht werken. Tools voor
+              freelancen en
+              bedrijfsopbouw worden aangereikt.</p>
           </div>
         </div>
       </section>
 
-      <section id="pijlers">
-        <h2>Ontwerp media die ertoe doen</h2>
-        <p class="muted">Creativiteit en bouwproces vormen een rode draad. Projecten variëren van websites tot VR games en fysieke computing-installaties.</p>
-        <div class="grid-3" style="margin-top:12px">
-          <div class="card"><h4 style="margin:0">Web</h4><p class="muted">Gebruikersvriendelijke apps en interactieve kiosken.</p></div>
-          <div class="card"><h4 style="margin:0">Virtual</h4><p class="muted">Meeslepende 3D experiences en games.</p></div>
-          <div class="card"><h4 style="margin:0">Physical</h4><p class="muted">Sensornetwerken, escaperooms en installaties.</p></div>
+      <div class="divider divider--down"></div>
+
+
+      <section id="pijlers" class="pillars">
+        <h2 class="pillars__title">Media die er toe doet</h2>
+        <p class="text text--muted">Creativiteit en bouwproces vormen een rode draad. Projecten variëren van websites
+          tot VR games
+          en fysieke computing-installaties.</p>
+        <div class="grid grid--3">
+          <div class="card pillars__card">
+            <h4 class="pillars__card-title">Web</h4>
+            <img class="card__image pillars__card-image" src="assets/images/pillars/web.jpg" alt="Web development">
+            <p class="text text--muted">Gebruikersvriendelijke apps en interactieve kiosken.</p>
+          </div>
+          <div class="card pillars__card">
+            <h4 class="pillars__card-title">Virtual</h4>
+            <img class="card__image pillars__card-image" src="assets/images/pillars/virtual.jpg" alt="Virtual development">
+            <p class="text text--muted">Meeslepende 3D experiences en games.</p>
+          </div>
+          <div class="card pillars__card">
+            <h4 class="pillars__card-title">Physical</h4>
+            <img class="card__image pillars__card-image" src="assets/images/pillars/physical.jpg" alt="Physical development">
+            <p class="text text--muted">Sensornetwerken, escaperooms en installaties.</p>
+          </div>
         </div>
       </section>
+
+      <div class="divider divider--up"></div>
 
       <section class="projects">
-        <div style="display:flex;justify-content:space-between;align-items:center">
-          <h2>Projecten en praktijk</h2>
-          <a class="muted" href="#projects">Bekijk alle projecten →</a>
+        <div class="projects__header projects__header--flex">
+          <h2 class="projects__title">Projecten en praktijk</h2>
+          <a class="projects__link text text--muted" href="https://grafischedigitalemedia.gent/interactive-media-development" target="_blank">Bekijk het portfolio van IMD →</a>
         </div>
 
-        <div class="grid-3" style="margin-top:12px">
-          <div class="project card">
-            <div>Interactieve Museumpaal</div>
-            <div class="meta">Kiosk met verhaalmodus en AR overlay</div>
-          </div>
+          <div class="grid grid--3">
+            <div class="projects__item card card--project">
+              <video class="projects__media" autoplay muted loop playsinline>
+                <source src="assets/videos/IMX_Extended_1_1.mp4" type="video/mp4">
+              </video>
+              <div class="projects__title">3D for web</div>
+              <div class="projects__meta">3D-modellering en webintegratie</div>
+            </div>
 
-          <div class="project card">
-            <div>VR Escape Experience</div>
-            <div class="meta">Volledig narratieve VR escaperoom</div>
-          </div>
+            <div class="projects__item card card--project">
+              <img class="projects__media" src="assets/images/projects/iot-1.jpg" alt="AR Ervaringen">
+              <div class="projects__title">IoT Toepassingen</div>
+              <div class="projects__meta">IoT-integratie en slimme apparaten</div>
+            </div>
 
-          <div class="project card">
-            <div>IoT Escape Room</div>
-            <div class="meta">Sensornetwerk &amp; fysieke puzzels</div>
+            <div class="projects__item card card--project">
+              <video class="projects__media" autoplay muted loop playsinline>
+                <source src="assets/videos/IMX_Unreal_1_1.mp4" type="video/mp4">
+              </video>
+              <div class="projects__title">Unreal Engine</div>
+              <div class="projects__meta">Productvoorstellingen</div>
+            </div>
+          </div>
+      </section>
+      <div class="divider divider--down"></div>
+
+      <section class="electives">
+        <h2 class="electives__title">Maak je opleiding uniek</h2>
+        <p class="text text--muted">Kies uit keuzevakken zoals Illustratie, Fotografie en Digital Marketing. In jaar 3
+          werk je in multidisciplinaire teams.</p>
+
+        <div class="grid grid--3" style="margin-top:12px">
+          <div class="card electives__card">
+            <img class="electives__image" src="assets/images/electives/3d-modeling.jpg" alt="3D-modeling" class="card__image">
+            <div class="electives__name"> 3D-modeling</div>
+            <div class="text text--muted electives__year">Keuzevak jaar 2</div>
+          </div>
+          <div class="card electives__card">
+            <img class="electives__image" src="assets/images/electives/photography.jpg" alt="Fotografie" class="card__image">
+            <div class="electives__name">Fotografie</div>
+            <div class="text text--muted electives__year">Keuzevak jaar 2</div>
+          </div>
+          <div class="card electives__card">
+            <img class="electives__image" src="assets/images/electives/digital-marketing.jpg" alt="Digital Marketing" class="card__image">
+            <div class="electives__name">Digital Marketing</div>
+            <div class="text text--muted electives__year">Keuzevak jaar 2</div>
           </div>
         </div>
       </section>
 
-      <section>
-        <h2>Maak je opleiding uniek</h2>
-        <p class="muted">Kies uit keuzevakken zoals Illustratie, Fotografie en Digital Marketing. In jaar 3 werk je in multidisciplinaire teams.</p>
-
-        <div class="grid-3" style="margin-top:12px">
-          <div class="card"><div>Illustratie</div><div class="muted">Keuzevak jaar 2</div></div>
-          <div class="card"><div>Fotografie</div><div class="muted">Keuzevak jaar 2</div></div>
-          <div class="card"><div>Digital Marketing</div><div class="muted">Keuzevak jaar 2</div></div>
-        </div>
-      </section>
-
-      <section style="margin-top:28px">
-        <div class="cta-wrap">
-          <div>
-            <h3 style="margin:0">Klaar om te creëren?</h3>
-            <p class="muted" style="margin:6px 0 0">Kom naar een infodag of vraag meer info — start jouw traject in Interactive Media Development.</p>
+      <section class="cta-section" style="margin-top:28px">
+        <div class="cta">
+          <div class="cta__content">
+            <h3 class="cta__title" style="margin:0">Klaar om te creëren?</h3>
+            <p class="text text--muted cta__description" style="margin:6px 0 0">Kom naar een infodag of vraag meer info
+              — start jouw traject in
+              Interactive Media Development.</p>
           </div>
-          <div style="display:flex;gap:10px">
-            <button class="btn-primary" id="applyBtn">Inschrijven</button>
-            <button class="btn-outline" id="contactBtn">Contact</button>
+          <div class="cta__actions" style="display:flex;gap:10px">
+            <button class="btn btn--primary cta__button" id="applyBtn">Inschrijven</button>
+            <button class="btn btn--outline cta__button" id="contactBtn">Contact</button>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>© Arteveldehogeschool — Interactive Media Development • Leeuwstraat 1, 9000 Gent</footer>
+    <footer class="footer">© Arteveldehogeschool — Interactive Media Development • Leeuwstraat 1, 9000 Gent</footer>
   </div>
 
   <script>
-    document.addEventListener('click', function(e){
+    document.addEventListener('click', function (e) {
       const t = e.target;
-      if(t.id === 'openInfo' || t.id === 'applyBtn'){
+      if (t.id === 'openInfo' || t.id === 'applyBtn') {
         alert('Bedankt! We sturen je info over de infodag. (Simulatie)');
       }
-      if(t.id === 'showCurriculum'){
+      if (t.id === 'showCurriculum') {
         const el = document.querySelector('section:nth-of-type(6)');
-        if(el) el.scrollIntoView({behavior:'smooth'});
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
       }
-      if(t.id === 'contactBtn'){
+      if (t.id === 'contactBtn') {
         const mail = 'mailto:info@arteveldehogeschool.be?subject=Info%20Interactive%20Media%20Development';
         window.location.href = mail;
       }
     });
 
-    window.addEventListener('load', function(){
-      document.querySelectorAll('.card, .feature, .project, .stat').forEach((el,i)=>{
+    window.addEventListener('load', function () {
+      document.querySelectorAll('.card, .features__item, .projects__item').forEach((el, i) => {
         el.style.opacity = 0; el.style.transform = 'translateY(8px)';
-        setTimeout(()=>{ el.style.transition = 'all .45s cubic-bezier(.2,.9,.2,1)'; el.style.opacity=1; el.style.transform='none'; }, 120 * i);
+        setTimeout(() => { el.style.transition = 'all .45s cubic-bezier(.2,.9,.2,1)'; el.style.opacity = 1; el.style.transform = 'none'; }, 120 * i);
       });
-      const blobs = document.querySelectorAll('.blob');
+      const blobs = document.querySelectorAll('.backdrop__blob');
       blobs.forEach(blob => {
         blob.animate([
           { transform: 'translate(0, 0)' },
@@ -189,4 +278,5 @@
     });
   </script>
 </body>
+
 </html>
